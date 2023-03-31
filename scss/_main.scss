@@ -1,0 +1,250 @@
+body {
+  font-family: "Faktum", sans-serif;
+}
+
+.center {
+  // .center__download
+  margin: 0 25em 0;
+  // max-width: 764px;
+
+  &__download {
+    margin-top: 142px;
+    height: 34px;
+    width: 111px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 7px 10px;
+    gap: 10px;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid #dddddd;
+
+    font-family: "Satoshi";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    /* identical to box height, or 20px */
+    text-align: center;
+    letter-spacing: 0.01em;
+    /* Monite Black */
+    color: #0a0a0a;
+  }
+
+  // .center__header
+
+  &__header {
+    margin-top: 24px;
+    //styleName: H1;
+    font-family: "Faktum";
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 53px;
+    letter-spacing: -0.02em;
+    text-align: left;
+
+    margin-bottom: 40px;
+  }
+
+  // .center__title-list
+
+  &__title-list {
+    list-style-type: none;
+    counter-reset: item;
+  }
+
+  // .center__title-element
+  &__title-element:before {
+    content: counters(item, ".") ". ";
+    display: table-cell;
+    padding-right: 0.8em; //!расстояние между номером и контентом
+    margin-bottom: 24px;
+  }
+
+  &__title-element {
+    display: table;
+    counter-increment: item;
+
+    list-style-position: outside;
+    font-family: "Faktum";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 140%;
+    letter-spacing: -0.01em;
+    color: #3c37ff;
+  }
+
+  // .center__element-list
+
+  &__element-list {
+    list-style-type: none;
+    counter-reset: item;
+    margin-top: 24px;
+  }
+
+  // .center__element-item
+
+  &__element-item:before {
+    content: counters(item, ".") " ";
+    display: table-cell;
+    color: #3c37ff;
+    width: 4em;
+  }
+
+  &__element-item {
+    display: table;
+    counter-increment: item;
+
+    font-family: "Satoshi";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0.01em;
+    color: black;
+
+    margin-left: -2.2em;
+    margin-bottom: 24px;
+  }
+
+  .par-ul {
+    list-style-position: outside;
+    list-style-type: circle !important;
+    padding-left: 20px;
+
+    .par-li {
+      list-style: disc;
+      padding-left: 2px;
+      margin-left: 3px;
+    }
+  }
+}
+.double::before {
+  padding-right: 0.5em; //!расстояние между номером и контентом
+}
+.double {
+  .center__element-item {
+    margin-left: -2.4em;
+  }
+}
+
+.bottom {
+  margin: 42px 25em 102px 20.25em;
+
+  display: flex;
+  justify-content: space-between;
+
+  h4 {
+    /* H4 */
+
+    font-family: "Faktum";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 140%;
+    letter-spacing: -0.01em;
+    color: #0a0a0a;
+  }
+
+  .center__download {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .center {
+    margin: 0 20em 0;
+  }
+  .bottom {
+    margin: 2em 10em 6em 10em;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .center {
+    margin: 0 12em 0;
+  }
+  .bottom {
+    margin: 2em 10em 6em 10em;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    font-size: 0.6em;
+  }
+  .center {
+    margin: 0 10em 0;
+    font-size: 0.5em;
+  }
+  .bottom {
+    margin: 2em 10em 6em 10em;
+  }
+}
+@media screen and (max-width: 400px) {
+  .center {
+    // .center__download
+    margin: 0 20px 0;
+    &__download {
+      margin-top: 68px;
+    }
+
+    // .center__header
+
+    &__header {
+      font-size: 26px;
+      line-height: 110%;
+      letter-spacing: -0.01em;
+      flex: none;
+      order: 1;
+      flex-grow: 0;
+    }
+
+    // .center__title-list
+
+    &__title-list {
+    }
+
+    // .center__title-element
+
+    &__title-element {
+      font-size: 14px;
+    }
+
+    // .center__element-list
+
+    &__element-list {
+    }
+
+    // .center__element-item
+    &__element-item:before {
+      width: 2.9em;
+    }
+
+    &__element-item {
+      font-size: 14px;
+      margin-left: -1.6em;
+    }
+  }
+  .par-ul {
+  }
+  .par-li {
+  }
+
+  .bottom {
+    margin-left: 21px;
+    display: flex;
+    flex-direction: column;
+
+    h4 {
+      font-size: 14px;
+    }
+
+    .center__download {
+      margin-top: 17px;
+      margin-bottom: 80px;
+    }
+  }
+}

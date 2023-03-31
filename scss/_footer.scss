@@ -1,0 +1,116 @@
+.mt-footer {
+  padding: 70px 0 56px;
+  background-color: #f1f2f5;
+
+  &__inner {
+    max-width: 1120px;
+    margin: 0 auto;
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__nav-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+  }
+
+  &__nav-menu-head {
+    color: #111;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0.01em;
+    opacity: 0.5;
+  }
+
+  &__nav-menu-link {
+    color: #111;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0.01em;
+
+    a {
+      color: #111;
+
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+
+  &__social {
+    margin-top: 64px;
+  }
+
+  &__copy {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 44px;
+    padding-top: 52px;
+    border-top: 1px solid #b8b8b8;
+  }
+
+  &__copy-inner {
+    display: flex;
+    gap: 50px;
+    color: #111;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0.01em;
+    opacity: 0.5;
+  }
+
+  &__copy-mail a {
+    color: #111;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0.01em;
+    opacity: 0.5;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &__social {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &_logo {
+    a {
+      display: flex;
+    }
+  }
+
+  &__socials {
+    display: flex;
+    gap: 13px;
+
+    li {
+      a {
+        display: flex;
+
+        img {
+          width: 32px;
+          height: 32px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  footer {
+    display: none;
+  } //! добавить стили для мобильного футтера
+}
