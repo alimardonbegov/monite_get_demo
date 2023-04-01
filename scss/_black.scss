@@ -1,0 +1,120 @@
+.black-area {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  height: 901px;
+}
+.background {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  background-color: #0a0a0a;
+  background-image: url("../img/background.svg");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+}
+.title {
+  margin: 120px 89px 24px;
+
+  h3 {
+    font-family: "Faktum";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 110%;
+    text-align: center;
+    color: #fafafa;
+  }
+}
+.description {
+  margin: 0 150px 64px;
+  p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #b8b8b8;
+  }
+}
+.card {
+  margin: 0 108px;
+  padding: 24px;
+  width: 100%;
+  max-width: 504px;
+  height: 272px;
+  background-color: #f1f2f5;
+  border-radius: 12px;
+  border: #dfdfdf 1px solid;
+
+  &__header {
+    display: flex;
+  }
+
+  &__header-text {
+  }
+
+  &__header-slash {
+    margin: 0 18px 0 16px;
+  }
+
+  &__header-flag {
+    margin-right: 8px;
+  }
+
+  // .card__text
+
+  &__text {
+    margin: 24px 0 48px;
+
+    p {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 140%;
+      letter-spacing: 0.01em;
+      color: #0a0a0a;
+      opacity: 0.6;
+      flex: none;
+      order: 1;
+      align-self: stretch;
+      flex-grow: 0;
+    }
+  }
+
+  // .card__footer
+
+  &__footer {
+    display: flex;
+    align-items: center;
+
+    img {
+      margin-right: 12px;
+    }
+    p {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 140%;
+      letter-spacing: 0.01em;
+      color: #111111;
+      flex: none;
+      order: 1;
+      flex-grow: 1;
+    }
+  }
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px 40px;
+}
