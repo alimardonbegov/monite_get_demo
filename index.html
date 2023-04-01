@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style/styles.css" />
+
+    <!-- !for phone number -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script> -->
   </head>
 
   <body>
@@ -41,9 +45,14 @@
       </div>
 
       <div class="white-area">
-        <img class="logo" src="" alt="" srcset="" />
-        <h1 class="book-text">Book a demo</h1>
-        <div class="form">
+        <button class="cross">
+          <img src="./img/cross.svg" alt="" srcset="" />
+        </button>
+        <img class="logo" src="./img/logo.svg" alt="" srcset="" />
+        <div class="book-text">
+          <h1>Book a demo</h1>
+        </div>
+        <form class="form">
           <div class="form__group">
             <label class="form__label" for="email">Business email</label>
             <input class="form__input" type="email" name="email" />
@@ -61,12 +70,39 @@
             </div>
           </div>
 
-          <button class="button-book">Book a demo</button>
-          <div class="privacy">
-            <p class="privacy__text">By clicking the button you agree with our <span>Privacy Notice.</span></p>
+          <div class="hidden">
+            <div class="form__group">
+              <label class="form__label" for="phone">Phone number</label>
+              <input class="form__input" type="tel" name="phone" id="phone" />
+            </div>
+
+            <div class="form__group">
+              <label class="form__label" for="company">Company</label>
+              <input class="form__input" type="text" name="company" />
+            </div>
+
+            <div class="form__group">
+              <label class="form__label" for="optional">What are you looking to build? <span> Optional </span></label>
+              <textarea class="form__input optional" type="text" name="optional"></textarea>
+            </div>
+
+            <div class="form__checkbox">
+              <div class="checkbox-item">
+                <input type="checkbox" name="agree" value="yes" checked />
+              </div>
+              <p>I want to receive emails with tips, best practices, and guides on revenue revamp.</p>
+            </div>
           </div>
+        </form>
+
+        <button class="button-book">Book a demo</button>
+        <div class="privacy">
+          <p>By clicking the button you agree with our <a>Privacy Notice.</a></p>
         </div>
       </div>
     </div>
+
+    <!-- <script src="./js/phoneCode.js"></script> -->
+    <script src="./js/handleIputChange.js"></script>
   </body>
 </html>
