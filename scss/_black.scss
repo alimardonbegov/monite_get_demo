@@ -30,6 +30,23 @@
     color: #fafafa;
   }
 }
+
+//! for submit page
+.title-submit {
+  margin: 108px 160px 96px;
+
+  h3 {
+    font-family: "Faktum";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 110%;
+    letter-spacing: -0.02em;
+    font-feature-settings: "tnum" on, "lnum" on;
+    color: #ffffff;
+  }
+}
+
 .description {
   margin: 0 150px 64px;
   p {
@@ -42,6 +59,7 @@
     color: #b8b8b8;
   }
 }
+
 .card {
   margin: 0 108px;
   padding: 24px;
@@ -88,7 +106,6 @@
   }
 
   // .card__footer
-
   &__footer {
     display: flex;
     align-items: center;
@@ -109,6 +126,40 @@
     }
   }
 }
+
+//! for submit page
+.card-submit {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 12px;
+  border: #dfdfdf 1px solid;
+
+  max-width: 360px;
+  height: 341px;
+
+  margin: 0 180px;
+  img {
+    padding: 52px 0 0 10px;
+  }
+
+  &__text {
+    margin: 24px 36px;
+
+    p {
+      font-family: "Satoshi";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 140%;
+      text-align: center;
+      letter-spacing: 0.01em;
+      color: #707070;
+    }
+  }
+}
+
 .footer {
   position: absolute;
   bottom: 0;
@@ -118,3 +169,5 @@
   align-items: center;
   padding: 0 40px 40px;
 }
+
+//!!! for submit page

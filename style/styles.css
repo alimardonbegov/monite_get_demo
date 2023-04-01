@@ -127,6 +127,20 @@ body {
   color: #fafafa;
 }
 
+.title-submit {
+  margin: 108px 160px 96px;
+}
+.title-submit h3 {
+  font-family: "Faktum";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 110%;
+  letter-spacing: -0.02em;
+  font-feature-settings: "tnum" on, "lnum" on;
+  color: #ffffff;
+}
+
 .description {
   margin: 0 150px 64px;
 }
@@ -194,6 +208,34 @@ body {
   flex-grow: 1;
 }
 
+.card-submit {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 12px;
+  border: #dfdfdf 1px solid;
+  max-width: 360px;
+  height: 341px;
+  margin: 0 180px;
+}
+.card-submit img {
+  padding: 52px 0 0 10px;
+}
+.card-submit__text {
+  margin: 24px 36px;
+}
+.card-submit__text p {
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: #707070;
+}
+
 .footer {
   position: absolute;
   bottom: 0;
@@ -241,6 +283,19 @@ body {
   flex-grow: 0;
 }
 
+.submit-description {
+  margin: -16px 160px 32px;
+}
+.submit-description p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: #707070;
+}
+
 .form {
   margin: 0 160px;
 }
@@ -286,7 +341,7 @@ body {
 .form__input.filled {
   background-color: white;
 }
-.form__name-field {
+.form__two-field {
   display: flex;
   justify-content: space-between;
   gap: 12px;

@@ -35,6 +35,20 @@
   }
 }
 
+.submit-description {
+  margin: -16px 160px 32px;
+  p {
+    // font-family: "Satoshi";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #707070;
+  }
+}
+
 .form {
   margin: 0 160px;
 
@@ -91,7 +105,7 @@
   }
 
   // .form__name-field
-  &__name-field {
+  &__two-field {
     display: flex;
     justify-content: space-between;
     gap: 12px;

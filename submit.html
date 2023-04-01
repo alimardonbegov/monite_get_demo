@@ -14,24 +14,15 @@
     <div class="container">
       <div class="black-area">
         <div class="background"></div>
-        <div class="title"><h3>Jumpstart your revenue with embedded AR/AP and payments.</h3></div>
-        <div class="description"><p>Monetize every customer better while improving their experience. Go live fast without extra investment.</p></div>
-        <div class="card">
-          <div class="card__header">
-            <img class="card__header-text" src="./img/enty.svg" alt="" srcset="" />
-            <img class="card__header-slash" src="./img/slash.svg" alt="" srcset="" />
-            <img class="card__header-flag" src="./img/flag1.svg" alt="" srcset="" />
-            <img class="card__header-flag" src="./img/flag2.svg" alt="" srcset="" />
-          </div>
-          <div class="card__text">
+        <div class="title title-submit"><h3>Amazing, {name}</h3></div>
+
+        <div class="card-submit">
+          <div class="card-submit__img"><img src="./img/head-of-sales.png" alt="" srcset="" /></div>
+          <div class="card-submit__text">
             <p>
-              We chose Monite due to its product depth, quality of APIs, and fast development. Working with Monite has been a breath of fresh air thanks to its robust API platform, knowledgeable team,
-              and quick support at all times.
+              Our team is looking forward to learn what you’re building!<br />
+              We’ll reach out soon.
             </p>
-          </div>
-          <div class="card__footer">
-            <img src="./img/photo.svg" alt="" srcset="" />
-            <p>Jane Shmygaleva, CPO</p>
           </div>
         </div>
         <div class="footer">
@@ -50,59 +41,43 @@
         </button>
         <img class="logo" src="./img/logo.svg" alt="" srcset="" />
         <div class="book-text">
-          <h1>Book a demo</h1>
+          <h1>One more thing</h1>
         </div>
-        <form class="form">
+        <div class="submit-description"><p>Answer a few questions to help us prepare in advance and offer the best solution for you!</p></div>
+        <form class="form" id="myForm">
           <div class="form__group">
-            <label class="form__label" for="email">Business email</label>
-            <input class="form__input" type="email" name="email" />
+            <label class="form__label" for="product">Product to explore</label>
+            <input class="form__input" type="text" name="product" />
           </div>
 
-          <div class="form__name-field">
-            <div class="form__group">
-              <label class="form__label" for="name">First name</label>
-              <input class="form__input" type="text" name="name" />
-            </div>
-
-            <div class="form__group">
-              <label class="form__label" for="surname">Last name</label>
-              <input class="form__input" type="text" name="surname" />
-            </div>
+          <div class="form__group">
+            <label class="form__label" for="country">Headquarters country</label>
+            <input class="form__input" type="text" name="country" />
           </div>
 
-          <div class="hidden">
+          <div class="form__two-field">
             <div class="form__group">
-              <label class="form__label" for="phone">Phone number</label>
-              <input class="form__input" type="tel" name="phone" id="phone" />
+              <label class="form__label" for="industry">Industry</label>
+              <input class="form__input" type="text" name="industry" />
             </div>
 
             <div class="form__group">
-              <label class="form__label" for="company">Company</label>
-              <input class="form__input" type="text" name="company" />
-            </div>
-
-            <div class="form__group">
-              <label class="form__label" for="optional">What are you looking to build? <span> Optional </span></label>
-              <textarea class="form__input optional" type="text" name="optional"></textarea>
-            </div>
-
-            <div class="form__checkbox">
-              <div class="checkbox-item">
-                <input type="checkbox" name="agree" value="yes" checked />
-              </div>
-              <p>I want to receive emails with tips, best practices, and guides on revenue revamp.</p>
+              <label class="form__label" for="founds_raised">Funds raised</label>
+              <input class="form__input" type="text" name="founds_raised" />
             </div>
           </div>
+          <div class="form__group">
+            <label class="form__label" for="optional">What are you looking to build? </label>
+            <input class="form__input" type="text" name="optional" />
+          </div>
+
+          <button class="button-book" id="submitBtn">Submit</button>
         </form>
-
-        <button class="button-book">Book a demo</button>
-        <div class="privacy">
-          <p>By clicking the button you agree with our <a>Privacy Notice.</a></p>
-        </div>
       </div>
     </div>
 
     <!-- <script src="./js/phoneCode.js"></script> -->
     <script src="./js/handleIputChange.js"></script>
+    <script src="./js/handleSubmit.js"></script>
   </body>
 </html>
