@@ -188,9 +188,85 @@
   }
 }
 
+@media screen and (max-width: 1200px) {
+  .white-area {
+    width: 100%;
+  }
+
+  .thanks-description {
+    margin: 20px 40px;
+    max-width: 500px;
+    p {
+      font-size: 25px;
+    }
+  }
+
+  .form {
+    margin: 0;
+    // width: 100%;
+    width: 390px;
+
+    // not hide additional inputs on mobile
+    .hidden {
+      display: block;
+    }
+    .shown {
+      display: block;
+    }
+
+    // .form__group
+    &__group {
+      margin-bottom: 24px;
+    }
+
+    // .form__label
+    &__label {
+      font-size: 10px;
+      color: #111111;
+    }
+
+    &__input {
+      font-size: 10px;
+    }
+
+    &__input.optional {
+      height: 40px;
+      resize: none;
+    }
+
+    // .form__name-field
+    &__two-field {
+      display: block;
+    }
+
+    &__checkbox {
+      height: 60px;
+      input {
+        width: 16px;
+        height: 16px;
+      }
+      p {
+        font-size: 10px;
+      }
+    }
+  }
+
+  .button-book {
+    margin-top: 32px;
+    width: 100%;
+    font-size: 10px;
+  }
+
+  .privacy {
+    margin-bottom: 20px;
+    p {
+      font-size: 10px;
+    }
+  }
+}
+
 @media screen and (max-width: 400px) {
   .white-area {
-    // display: none;
     max-height: 867px;
     width: 100%;
     padding: 21px 20px 0;

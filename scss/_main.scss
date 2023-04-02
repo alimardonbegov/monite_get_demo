@@ -6,6 +6,12 @@ body {
   display: flex;
 }
 
+@media screen and (max-width: 1200px) {
+  .container {
+    flex-flow: column;
+  }
+}
+
 @media screen and (max-width: 400px) {
   .container {
     flex-flow: column-reverse;

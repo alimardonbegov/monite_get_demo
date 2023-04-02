@@ -93,6 +93,11 @@ body {
   display: flex;
 }
 
+@media screen and (max-width: 1200px) {
+  .container {
+    flex-flow: column;
+  }
+}
 @media screen and (max-width: 400px) {
   .container {
     flex-flow: column-reverse;
@@ -106,7 +111,10 @@ body {
   width: 50%;
   height: 901px;
 }
-.black-area .cross .logo {
+.black-area .cross {
+  display: none;
+}
+.black-area .logo {
   display: none;
 }
 
@@ -259,6 +267,87 @@ body {
   padding-top: 3px;
 }
 
+@media screen and (max-width: 1200px) {
+  .black-area {
+    width: 100%;
+  }
+  .title {
+    margin: 88px 10px 24px;
+    padding: 0 4px;
+    max-width: 600px;
+  }
+  .description {
+    margin: 0 0 48px;
+    max-width: 390px;
+  }
+  .card {
+    margin: 0 103px;
+    max-width: 390px;
+    height: 278px;
+  }
+  .card__header {
+    display: flex;
+  }
+  .card__header-text {
+    width: 46px;
+  }
+  .card__header-slash {
+    height: 24px;
+    margin: 0 8px;
+  }
+  .card__header-flag {
+    height: 24px;
+    margin-right: 4px;
+  }
+  .card__text {
+    margin: 24px 0 48px;
+  }
+  .card__text p {
+    font-size: 12px;
+  }
+  .card__footer {
+    display: flex;
+    align-items: center;
+  }
+  .card__footer img {
+    width: 32px;
+  }
+  .card__footer p {
+    font-size: 12px;
+  }
+  .card-submit {
+    margin: 64px 0 0;
+    height: 326px;
+  }
+  .card-submit__text p {
+    color: #707070;
+  }
+  .footer {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 20px 20px;
+    gap: 19px;
+  }
+  .footer .finswiss {
+    width: 72px;
+  }
+  .footer .intrepid {
+    width: 70px;
+  }
+  .footer .enty {
+    padding-top: 4px;
+    width: 36px;
+  }
+  .footer .niobi {
+    width: 46px;
+  }
+  .footer .debite {
+    width: 65px;
+  }
+  .footer .onmyway {
+    width: 59px;
+  }
+}
 @media screen and (max-width: 400px) {
   .black-area {
     width: 100%;
@@ -531,6 +620,66 @@ body {
   cursor: pointer;
 }
 
+@media screen and (max-width: 1200px) {
+  .white-area {
+    width: 100%;
+  }
+  .thanks-description {
+    margin: 20px 40px;
+    max-width: 500px;
+  }
+  .thanks-description p {
+    font-size: 25px;
+  }
+  .form {
+    margin: 0;
+    width: 390px;
+  }
+  .form .hidden {
+    display: block;
+  }
+  .form .shown {
+    display: block;
+  }
+  .form__group {
+    margin-bottom: 24px;
+  }
+  .form__label {
+    font-size: 10px;
+    color: #111111;
+  }
+  .form__input {
+    font-size: 10px;
+  }
+  .form__input.optional {
+    height: 40px;
+    resize: none;
+  }
+  .form__two-field {
+    display: block;
+  }
+  .form__checkbox {
+    height: 60px;
+  }
+  .form__checkbox input {
+    width: 16px;
+    height: 16px;
+  }
+  .form__checkbox p {
+    font-size: 10px;
+  }
+  .button-book {
+    margin-top: 32px;
+    width: 100%;
+    font-size: 10px;
+  }
+  .privacy {
+    margin-bottom: 20px;
+  }
+  .privacy p {
+    font-size: 10px;
+  }
+}
 @media screen and (max-width: 400px) {
   .white-area {
     max-height: 867px;

@@ -6,10 +6,14 @@
   width: 50%;
   height: 901px;
 
-  .cross .logo {
+  .cross {
+    display: none;
+  }
+  .logo {
     display: none;
   }
 }
+
 .background {
   position: absolute;
   top: 0;
@@ -21,6 +25,7 @@
   background-repeat: no-repeat;
   background-position: bottom center;
 }
+
 .title {
   margin: 120px 89px 24px;
 
@@ -177,6 +182,109 @@
 
   .enty {
     padding-top: 3px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .black-area {
+    width: 100%;
+  }
+
+  .title {
+    margin: 88px 10px 24px;
+    padding: 0 4px;
+    max-width: 600px;
+  }
+
+  .description {
+    margin: 0 0 48px;
+    max-width: 390px;
+  }
+
+  .card {
+    margin: 0 103px;
+    max-width: 390px;
+
+    height: 278px;
+
+    &__header {
+      display: flex;
+    }
+
+    &__header-text {
+      width: 46px;
+    }
+
+    &__header-slash {
+      height: 24px;
+      margin: 0 8px;
+    }
+
+    &__header-flag {
+      height: 24px;
+      margin-right: 4px;
+    }
+
+    // .card__text
+
+    &__text {
+      margin: 24px 0 48px;
+
+      p {
+        font-size: 12px;
+      }
+    }
+
+    // .card__footer
+    &__footer {
+      display: flex;
+      align-items: center;
+
+      img {
+        width: 32px;
+      }
+      p {
+        font-size: 12px;
+      }
+    }
+  }
+
+  .card-submit {
+    margin: 64px 0 0;
+    height: 326px;
+
+    &__text {
+      p {
+        color: #707070;
+      }
+    }
+  }
+
+  .footer {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 20px 20px;
+    gap: 19px;
+
+    .finswiss {
+      width: 72px;
+    }
+    .intrepid {
+      width: 70px;
+    }
+    .enty {
+      padding-top: 4px;
+      width: 36px;
+    }
+    .niobi {
+      width: 46px;
+    }
+    .debite {
+      width: 65px;
+    }
+    .onmyway {
+      width: 59px;
+    }
   }
 }
 
