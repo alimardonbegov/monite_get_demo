@@ -106,6 +106,9 @@ body {
   width: 50%;
   height: 901px;
 }
+.black-area .cross .logo {
+  display: none;
+}
 
 .background {
   position: absolute;
@@ -253,7 +256,90 @@ body {
 
 @media screen and (max-width: 400px) {
   .black-area {
-    display: none;
+    width: 100%;
+    height: 779px;
+    padding: 0 20px;
+  }
+  .black-area .cross .logo {
+    display: block;
+  }
+  .background {
+    background-image: url("../img/background-sml.svg");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+  }
+  .title {
+    margin: 88px 0 24px;
+    padding: 0 4px;
+  }
+  .title h3 {
+    font-size: 26px;
+  }
+  .description {
+    margin: 0 0 48px;
+  }
+  .description p {
+    font-size: 12px;
+    color: #dddddd;
+    opacity: 0.6;
+  }
+  .card {
+    margin: 0 103px;
+    height: 278px;
+  }
+  .card__header {
+    display: flex;
+  }
+  .card__header-text {
+    width: 46px;
+  }
+  .card__header-slash {
+    height: 24px;
+    margin: 0 8px;
+  }
+  .card__header-flag {
+    height: 24px;
+    margin-right: 4px;
+  }
+  .card__text {
+    margin: 24px 0 48px;
+  }
+  .card__text p {
+    font-size: 12px;
+  }
+  .card__footer {
+    display: flex;
+    align-items: center;
+  }
+  .card__footer img {
+    width: 32px;
+  }
+  .card__footer p {
+    font-size: 12px;
+  }
+  .footer {
+    flex-wrap: wrap;
+    padding: 0 20px 20px;
+    gap: 19px;
+  }
+  .footer .finswiss {
+    width: 72px;
+  }
+  .footer .intrepid {
+    width: 70px;
+  }
+  .footer .enty {
+    padding-top: 2px;
+    width: 36px;
+  }
+  .footer .niobi {
+    width: 46px;
+  }
+  .footer .debite {
+    width: 65px;
+  }
+  .footer .onmyway {
+    width: 59px;
   }
 }
 .white-area {
@@ -428,6 +514,7 @@ body {
 
 @media screen and (max-width: 400px) {
   .white-area {
+    display: none;
     max-height: 867px;
     width: 100%;
     padding: 21px 20px 0;
