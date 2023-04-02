@@ -190,9 +190,17 @@
 
 @media screen and (max-width: 400px) {
   .white-area {
+    // display: none;
     max-height: 867px;
     width: 100%;
     padding: 21px 20px 0;
+  }
+
+  .thanks-white-area {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
   }
 
   .cross {
@@ -218,6 +226,21 @@
     h1 {
       font-size: 26px;
       letter-spacing: -0.01em;
+    }
+  }
+
+  .thanks-text {
+    margin: 120px 20px 0;
+    h1 {
+      font-size: 35px;
+      letter-spacing: -0.01em;
+    }
+  }
+
+  .thanks-description {
+    margin: 0 20px;
+    p {
+      font-size: 20px;
     }
   }
 
