@@ -12,6 +12,10 @@
   position: absolute;
   top: 22px;
   right: 22px;
+  img {
+    width: 12px;
+    height: 12px;
+  }
 }
 
 .logo {
@@ -110,6 +114,7 @@
     height: 120px;
     resize: none;
   }
+
   &__input.filled {
     background-color: white;
   }
@@ -179,6 +184,102 @@
     a {
       text-decoration: underline;
       cursor: pointer;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .white-area {
+    max-height: 867px;
+    width: 100%;
+    padding: 21px 20px 0;
+  }
+
+  .cross {
+    position: absolute;
+    top: 21px;
+    right: 20px;
+    img {
+      width: 8px;
+      height: 8px;
+    }
+  }
+
+  .logo {
+    width: 59px;
+    position: absolute;
+    margin: 0;
+    top: 21px;
+    left: 20px;
+  }
+
+  .book-text {
+    margin: 67px 20px 36px;
+    h1 {
+      font-size: 26px;
+      letter-spacing: -0.01em;
+    }
+  }
+
+  .form {
+    margin: 0;
+    width: 100%;
+
+    // not hide additional inputs on mobile
+    .hidden {
+      display: block;
+    }
+    .shown {
+      display: block;
+    }
+
+    // .form__group
+    &__group {
+      margin-bottom: 24px;
+    }
+
+    // .form__label
+    &__label {
+      font-size: 10px;
+      color: #111111;
+    }
+
+    &__input {
+      font-size: 10px;
+    }
+
+    &__input.optional {
+      height: 40px;
+      resize: none;
+    }
+
+    // .form__name-field
+    &__two-field {
+      display: block;
+    }
+
+    &__checkbox {
+      height: 60px;
+      input {
+        width: 16px;
+        height: 16px;
+      }
+      p {
+        font-size: 10px;
+      }
+    }
+  }
+
+  .button-book {
+    margin-top: 32px;
+    width: 100%;
+    font-size: 10px;
+  }
+
+  .privacy {
+    margin-bottom: 20px;
+    p {
+      font-size: 10px;
     }
   }
 }

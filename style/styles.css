@@ -93,6 +93,11 @@ body {
   display: flex;
 }
 
+@media screen and (max-width: 400px) {
+  .container {
+    flex-flow: column-reverse;
+  }
+}
 .black-area {
   position: relative;
   display: flex;
@@ -246,6 +251,11 @@ body {
   padding: 0 40px 40px;
 }
 
+@media screen and (max-width: 400px) {
+  .black-area {
+    display: none;
+  }
+}
 .white-area {
   position: relative;
   display: flex;
@@ -260,6 +270,10 @@ body {
   position: absolute;
   top: 22px;
   right: 22px;
+}
+.cross img {
+  width: 12px;
+  height: 12px;
 }
 
 .logo {
@@ -410,4 +424,83 @@ body {
 .privacy p a {
   text-decoration: underline;
   cursor: pointer;
+}
+
+@media screen and (max-width: 400px) {
+  .white-area {
+    max-height: 867px;
+    width: 100%;
+    padding: 21px 20px 0;
+  }
+  .cross {
+    position: absolute;
+    top: 21px;
+    right: 20px;
+  }
+  .cross img {
+    width: 8px;
+    height: 8px;
+  }
+  .logo {
+    width: 59px;
+    position: absolute;
+    margin: 0;
+    top: 21px;
+    left: 20px;
+  }
+  .book-text {
+    margin: 67px 20px 36px;
+  }
+  .book-text h1 {
+    font-size: 26px;
+    letter-spacing: -0.01em;
+  }
+  .form {
+    margin: 0;
+    width: 100%;
+  }
+  .form .hidden {
+    display: block;
+  }
+  .form .shown {
+    display: block;
+  }
+  .form__group {
+    margin-bottom: 24px;
+  }
+  .form__label {
+    font-size: 10px;
+    color: #111111;
+  }
+  .form__input {
+    font-size: 10px;
+  }
+  .form__input.optional {
+    height: 40px;
+    resize: none;
+  }
+  .form__two-field {
+    display: block;
+  }
+  .form__checkbox {
+    height: 60px;
+  }
+  .form__checkbox input {
+    width: 16px;
+    height: 16px;
+  }
+  .form__checkbox p {
+    font-size: 10px;
+  }
+  .button-book {
+    margin-top: 32px;
+    width: 100%;
+    font-size: 10px;
+  }
+  .privacy {
+    margin-bottom: 20px;
+  }
+  .privacy p {
+    font-size: 10px;
+  }
 }
