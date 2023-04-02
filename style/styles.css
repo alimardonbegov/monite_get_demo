@@ -263,11 +263,6 @@ body {
   .black-area .cross .logo {
     display: block;
   }
-  .background {
-    background-image: url("../img/background-sml.svg");
-    background-repeat: no-repeat;
-    background-position: bottom center;
-  }
   .title {
     margin: 88px 0 24px;
     padding: 0 4px;
@@ -319,6 +314,7 @@ body {
   }
   .footer {
     flex-wrap: wrap;
+    justify-content: space-around;
     padding: 0 20px 20px;
     gap: 19px;
   }
@@ -340,6 +336,13 @@ body {
   }
   .footer .onmyway {
     width: 59px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .background {
+    background-image: url("../img/background-sml.svg");
+    background-repeat: no-repeat;
+    background-position: bottom center;
   }
 }
 .white-area {
@@ -514,7 +517,6 @@ body {
 
 @media screen and (max-width: 400px) {
   .white-area {
-    display: none;
     max-height: 867px;
     width: 100%;
     padding: 21px 20px 0;
