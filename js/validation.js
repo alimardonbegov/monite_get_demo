@@ -1,6 +1,8 @@
+var isFormValid;
+
 function validate(event) {
   event.preventDefault();
-  var isFormValid = true;
+  isFormValid = true;
 
   document.querySelectorAll("form input[data-required]").forEach(function (input) {
     var error = input.nextElementSibling;
@@ -32,11 +34,15 @@ function validate(event) {
       }
     }
   });
-
-  if (isFormValid) {
-    window.location.href = "thanks.html";
-  }
 }
 
 document.querySelector("form").addEventListener("submit", validate);
 document.querySelector("form").addEventListener("change", validate);
+document.getElementById("bookBtn").addEventListener("click", () => {
+  if (isFormValid) {
+    window.location.href = "thanks.html";
+  }
+  console.log(isFormValid);
+
+  console.log("clicked");
+});
