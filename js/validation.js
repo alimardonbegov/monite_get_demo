@@ -1,6 +1,7 @@
 function validate(event) {
   event.preventDefault();
-  //Validate each form input
+  var isFormValid = true;
+
   document.querySelectorAll("form input[data-required]").forEach(function (input) {
     var error = input.nextElementSibling;
     if (input.value.trim().length === 0) {
@@ -10,14 +11,14 @@ function validate(event) {
         error.textContent = input.getAttribute("data-error-message");
         input.insertAdjacentElement("afterend", error);
       }
+      isFormValid = false;
     } else if (error && error.classList.contains("error")) {
       error.remove();
     }
 
-    //Validate email format
-    if (input.type === "text" && input.name === "email") {
-      var emailRegex = /^\S+@\S+\.\S+$/;
-      if (!emailRegex.test(input.value.trim())) {
+    if (input.type === "text" && (input.name === "email" || input.name === "phone")) {
+      var regex = input.name === "email" ? /^\S+@\S+\.\S+$/ : /^[0-9]{10}$/;
+      if (!regex.test(input.value.trim())) {
         error = input.nextElementSibling;
         if (!error || !error.classList.contains("error")) {
           error = document.createElement("p");
@@ -25,11 +26,16 @@ function validate(event) {
           error.textContent = input.getAttribute("data-error-message");
           input.insertAdjacentElement("afterend", error);
         }
+        isFormValid = false;
       } else if (error && error.classList.contains("error")) {
         error.remove();
       }
     }
   });
+
+  if (isFormValid) {
+    window.location.href = "thanks.html";
+  }
 }
 
 document.querySelector("form").addEventListener("submit", validate);
