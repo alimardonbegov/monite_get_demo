@@ -517,6 +517,10 @@ body {
 .form .shown {
   display: block;
 }
+.form .error {
+  color: red;
+  padding-top: 5px;
+}
 .form__group {
   margin-bottom: 16px;
 }

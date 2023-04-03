@@ -10,7 +10,7 @@ saveBtn.addEventListener("click", function (e) {
   for (let [key, value] of formData.entries()) {
     dataBook[key] = value;
   }
-  window.location.href = "thanks.html"; //redirect to second page
+  // window.location.href = "thanks.html"; //redirect to second page
 
   //print result in console
   for (const [name, value] of formData.entries()) {

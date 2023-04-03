@@ -59,30 +59,30 @@
         <form class="form" id="myForm">
           <div class="form__group">
             <label class="form__label" for="email">Business email</label>
-            <input class="form__input" type="email" name="email" />
+            <input class="form__input" type="text" name="email" data-required data-error-message="Please enter your work email address" />
           </div>
 
           <div class="form__two-field">
             <div class="form__group">
               <label class="form__label" for="name">First name</label>
-              <input class="form__input" type="text" name="name" />
+              <input class="form__input" type="text" name="name" id="name" data-required data-error-message="Please enter your first name" />
             </div>
 
             <div class="form__group">
               <label class="form__label" for="surname">Last name</label>
-              <input class="form__input" type="text" name="surname" />
+              <input class="form__input" type="text" name="surname" id="surname" data-required data-error-message="Please enter your last name" />
             </div>
           </div>
 
           <div class="hidden">
             <div class="form__group">
               <label class="form__label" for="phone">Phone number</label>
-              <input class="form__input" type="tel" name="phone" id="phone" />
+              <input class="form__input" type="tel" name="phone" id="phone" data-required data-error-message="Please enter your phone number" />
             </div>
 
             <div class="form__group">
               <label class="form__label" for="company">Company</label>
-              <input class="form__input" type="text" name="company" />
+              <input class="form__input" type="text" id="company" name="company" data-required data-error-message="Please enter your company name" />
             </div>
 
             <div class="form__group">
@@ -97,16 +97,18 @@
               <p>I want to receive emails with tips, best practices, and guides on revenue revamp.</p>
             </div>
           </div>
-          <button class="button-book" id="bookBtn">Book a demo</button>
-          <div class="privacy">
-            <p>By clicking the button you agree with our <a>Privacy Notice.</a></p>
-          </div>
+          <input type="submit" value="Book a demo" class="button-book" id="bookBtn" />
         </form>
+        <div class="privacy">
+          <p>By clicking the button you agree with our <a>Privacy Notice.</a></p>
+        </div>
       </div>
     </div>
 
     <!-- <script src="./js/phoneCode.js"></script> -->
     <script src="./js/handleIputChange.js"></script>
-    <script src="./js/handleBook.js"></script>
+    <script src="./js/validation.js"></script>
+
+    <!-- <script src="./js/handleBook.js"></script> -->
   </body>
 </html>

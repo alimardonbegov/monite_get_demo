@@ -67,6 +67,11 @@
     display: block;
   }
 
+  .error {
+    color: red;
+    padding-top: 5px;
+  }
+
   // .form__group
   &__group {
     margin-bottom: 16px;
