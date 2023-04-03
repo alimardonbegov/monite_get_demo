@@ -42,7 +42,4 @@ document.getElementById("bookBtn").addEventListener("click", () => {
   if (isFormValid) {
     window.location.href = "thanks.html";
   }
-  console.log(isFormValid);
-
-  console.log("clicked");
 });

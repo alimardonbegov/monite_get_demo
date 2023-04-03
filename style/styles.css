@@ -351,13 +351,16 @@ body {
 @media screen and (max-width: 400px) {
   .black-area {
     width: 100%;
-    height: 400px;
+    height: 800px;
     padding: 0 20px;
   }
   .black-area .cross .logo {
     display: block;
   }
-  .title {
+  .thanks-black-area {
+    height: 400px;
+  }
+  .title-thanks {
     display: none;
   }
   .description {
@@ -682,14 +685,18 @@ body {
 }
 @media screen and (max-width: 400px) {
   .white-area {
-    max-height: 405px;
+    height: 100%;
     width: 100%;
     padding: 21px 20px 0;
   }
   .thanks-white-area {
     height: 100vh;
+    height: 405px;
     display: flex;
     flex-direction: column;
+  }
+  .error {
+    font-size: 10px;
   }
   .cross {
     position: absolute;
